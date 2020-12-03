@@ -48,6 +48,7 @@ public class Store extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jDesktopPane1 = new javax.swing.JDesktopPane();
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel5.setText("STORE ITEMS");
@@ -59,9 +60,16 @@ public class Store extends javax.swing.JFrame {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setBackground(new java.awt.Color(0, 102, 102));
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/My Post (1).png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 10, 320, 60));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("STORE ITEMS");
+        jLabel1.setMaximumSize(new java.awt.Dimension(200, 100));
+        jLabel1.setMinimumSize(new java.awt.Dimension(200, 126));
+        jLabel1.setOpaque(true);
+        jLabel1.setPreferredSize(new java.awt.Dimension(200, 100));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 150, 30));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Apples (£0.50)", "Oranges (£0.60)", "Mangoes (£1.25)", "Corn (£0.38)", "Peas (£0.64)", "Tomatoes (£0.33)", "Pears (£0.40)", "Carrots (£1.26)", "Watermelons (£1.12)", "Pineapples (£1.70)" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -69,18 +77,18 @@ public class Store extends javax.swing.JFrame {
                 jComboBox1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 51, 139, 33));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, 314, 40));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 51, 150, 33));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, 310, 40));
 
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 170, 320, 110));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 170, 310, 110));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/basket (3).png"))); // NOI18N
-        jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.setContentAreaFilled(false);
         jButton1.setFocusPainted(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -90,31 +98,41 @@ public class Store extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, 70, 60));
 
+        jLabel4.setBackground(new java.awt.Color(0, 102, 102));
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/qlb.png"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 300, 60));
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("INPUT QUANTITY:");
+        jLabel4.setOpaque(true);
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 210, 30));
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(189, 286, -1, -1));
 
+        jLabel8.setBackground(new java.awt.Color(0, 102, 102));
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Tp.png"))); // NOI18N
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, -1, 50));
+        jLabel8.setText("TOTAL PRICE");
+        jLabel8.setOpaque(true);
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, 180, 40));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/res.png"))); // NOI18N
+        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton3.setContentAreaFilled(false);
         jButton3.setFocusPainted(false);
+        jButton3.setOpaque(true);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 0, 60, 50));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 10, 30, 30));
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/back3.png"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 520, 290));
+        getContentPane().add(jDesktopPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -230,6 +248,7 @@ public class Store extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
